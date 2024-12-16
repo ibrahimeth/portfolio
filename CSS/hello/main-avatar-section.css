@@ -1,0 +1,99 @@
+.hidden{
+    display: none;
+}
+.avatar-page-row-trans{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.myBio{
+    z-index: 2;
+    padding: 20px 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 15px;
+    background-color: rgba(17, 15, 15, 0.571);
+}   
+.hidden-avatar{
+    display: none;
+    height: 200px;
+    width: 200px;
+}
+
+#avatar-align{
+    padding: 0px 180px;
+}
+#home{
+    background-color: #0000001b;
+}
+#avatar-page{
+    
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.image-container {
+    border-radius: 50%;
+    position: relative;
+    width: clamp(200px, 30vw, 400px); 
+    height: clamp(200px, 30vw, 400px); 
+    overflow: hidden;
+    padding: 10px;
+    perspective: 700px;
+    z-index: 2;
+}
+  
+.tilt-image {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0); 
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease-out, ; 
+    transform-origin: center; 
+}
+
+.tilt-image:hover{
+    box-shadow: 5px 5px 10px #c43e3e;
+    cursor: move;
+    
+}
+
+@media (max-width: 768px) {
+    .hidden {
+        display: flex;
+    }
+    #avatar-align{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 0px 10px;
+        margin: 10px;
+    }
+    .myBio{
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        gap: 30px;
+    }
+    .textXL{
+        font-size: 1px;
+    }
+    .text-RGB{
+    }
+    .textM{
+    }
+    #home{
+        align-content: start;
+    }
+}
